@@ -1,9 +1,9 @@
-# Running the API
+# Installing the app
 For your convenience, please have virtualenv installed. I'm sure you all have it :)
 All the requirements are now in requirements.txt.
 
-- `git clone albert_untung_backend.bundle` or `git clone https://github.com/aulb/api_maze_solver`
-- `cd albert_untung_backend`
+- `git clone api_maze_solver.bundle` or `git clone https://github.com/aulb/api_maze_solver`
+- `cd api_maze_solver`
 - `virtualenv --no-site-packages -p python3.6 venv`
 - `source venv/bin/activate`
 - `pip install -r requirements.txt`
@@ -12,8 +12,10 @@ All the requirements are now in requirements.txt.
 You might have to deactivate and reactivate virtualenv after installing all the requirements.
 
 # Main Function
-The maze solver is just running through a main function. To solve the maze first we need to:
+To run the script, first make sure that the virtual environment for python is on.
+- `python3 main.py`
 
+The maze solver is just running through a main function. To solve the maze first we need to:
 1) Obtain the maze
 2) Do DFS (or any other solving method), where on each cell we make the API call to check validity
 3) Obtain solution from said solver method
